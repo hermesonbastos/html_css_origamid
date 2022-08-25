@@ -112,6 +112,8 @@ p {
   text-align: right;
   padding: 2.5rem;
   align-self: center;
+  background-image: url(./img/onda.svg);
+  background-position: center;
 }
 
 .vantagens {
@@ -218,6 +220,9 @@ p {
 
   .subtitulo {
     text-align: center;
+    margin-top: 3.75rem;
+    margin-bottom: -1.5rem;
+    background-image: none;
   }
   
 }
