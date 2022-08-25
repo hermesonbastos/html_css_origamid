@@ -149,3 +149,83 @@ p {
   padding: 2.5rem;
   box-sizing: border-box;
 }
+
+
+/*------------------------------ Responsividade ------------------------------*/
+
+@media (max-width: 1000px){
+
+  .conteudo {
+    max-width: 50rem;
+    margin-inline: 3rem;
+  }
+
+  .vantagens-item p {
+    grid-column: 1 / -1;
+  }
+
+  .vantagens-item {
+    grid-template-columns: 1.5rem auto;
+  }
+
+  .subtitulo {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 680px){
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    margin-inline: 0.625rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .menu a {
+    display: block;
+  }
+
+  .conteudo {
+    grid-template-columns: 1fr;
+    max-width: 25rem;
+    border-radius: 6px;
+    overflow: hidden;
+    align-items: center;
+    margin-inline: 0.625rem;
+  }
+
+  .introducao {
+    justify-items: center;
+    text-align: center;
+    max-width: 30rem;
+    box-sizing: border-box;
+    background-image: url(./img/bicicleta.jpg);
+    background: cover;
+    background-size: cover;
+    color: #fff;
+    background-position: center;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .introducao::before {
+    display: none;
+  }
+
+  .subtitulo {
+    text-align: center;
+  }
+  
+}
+
+.fit {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}

@@ -1,13 +1,36 @@
+<!--
+|---------------------------------------- Especificações ----------------------------------------|
+  -Utilizar tags semânticas
+    nav, article, ul e outras. Utilizar aria-label quando possível.
+
+  -Modificar as unidades
+    Pelo menos para as tipografias e valores relacionados as mesmas, mudar de PX para REM.
+
+  -Modificar o background do subtitulo
+    Adicionar o padrão svg disponível (onda.svg).
+
+  -Mudar os estados de alguns elementos ao passar o mouse por cima.
+    Borda vermelha nos links do menu, vermelho escuro no botão (#900) e borda esquerda vermelha nas vantagens.
+
+  -Pintar os itens ímpares
+    Das vantagens com o tom de cinza claro (o background com #f7f7f7)
+
+  -Substituir o span decorativo
+    Pelo pseudo element ideal
+-->
+
 <!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bikcraft</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+
   <header>
     <img src="./img/bikcraft.svg" alt="Bikcraft">
     <nav aria-label="primária">
@@ -28,7 +51,7 @@
         <a class="botao" href="#">Ver Mais</a>
       </div>
   
-      <img src="./img/bicicleta.jpg" alt="Bicicleta Bikcraft Preta">
+      <img class="fit relative hidden" src="./img/bicicleta.jpg" alt="Bicicleta Bikcraft Preta">
     </article>
 
     <article class="conteudo" aria-labelledby="vantagens">
@@ -45,7 +68,7 @@
           <p>A mais rápida bicicleta elétrica disponível hoje no mercado.</p>
         </li>
         <li class="vantagens-item">
-          <img src="./img/rastreador.svg" alt="">
+          <img class="rastreador" src="./img/rastreador.svg" alt="">
           <h3>Rastreador</h3>
           <p>Rastreador e sistema anti-furto para garantir o seu sossego.</p>
         </li>
